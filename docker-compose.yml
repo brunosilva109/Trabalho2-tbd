@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # 1. Configuração do MongoDB
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_eventos
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  # 2. Configuração do Neo4j
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j_eventos
+    ports:
+      - "7474:7474" # Interface visual do Neo4j no navegador
+      - "7687:7687" # Porta de conexão Bolt (usada pelo Java)
+    environment:
+      - NEO4J_AUTH=neo4j/senha123 # Usuário e senha padrão
+    volumes:
+      - neo4j_data:/data
+
+  # 3. Configuração do PostgreSQL
+  postgres:
+    image: postgres:15
+    container_name: postgres_eventos
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=senha123
+      - POSTGRES_DB=gerenciador_eventos
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  mongo_data:
+  neo4j_data:
+  postgres_data:

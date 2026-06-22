@@ -1,0 +1,17 @@
+trabalhoii\trabalhoii\repository\postgres\EventoPostgresRepository.class
+trabalhoii\trabalhoii\service\AdminService.class
+trabalhoii\trabalhoii\repository\mongo\EventoMongoRepository.class
+trabalhoii\trabalhoii\TrabalhoiiApplication.class
+trabalhoii\trabalhoii\model\mongo\Evento.class
+trabalhoii\trabalhoii\repository\mongo\PessoaMongoRepository.class
+trabalhoii\trabalhoii\service\PessoaService.class
+trabalhoii\trabalhoii\controller\EventoController.class
+trabalhoii\trabalhoii\model\mongo\Pessoa.class
+trabalhoii\trabalhoii\model\neo4j\PessoaNode.class
+trabalhoii\trabalhoii\model\neo4j\EventoNode.class
+trabalhoii\trabalhoii\model\postgres\EventoRelacional.class
+trabalhoii\trabalhoii\controller\PessoaController.class
+trabalhoii\trabalhoii\repository\neo4j\EventoNeo4jRepository.class
+trabalhoii\trabalhoii\controller\AdminController.class
+trabalhoii\trabalhoii\service\EventoService.class
+trabalhoii\trabalhoii\repository\neo4j\PessoaNeo4jRepository.class
